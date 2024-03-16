@@ -1,0 +1,12 @@
+@using EmployeeMVCORM.Entity;
+
+<h2>All Employees</h2>
+<hr>
+@{
+    List<Employee> list=Model;
+    foreach(Employee e in list)
+    {
+        <p>@e.Id @e.Name @e.Salary <a href="/Employee/UpdateEmp/@e.Id">Edit</a> | <a href="/Employee/DeleteEmp/@e.Id">Delete</a></p>
+    }
+
+}

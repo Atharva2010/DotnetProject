@@ -1,0 +1,17 @@
+@using EmployeeMVCORM.Entity;
+
+<h2>Update Employee Data</h2>
+<hr>
+
+<form method="post" asp-controller="Employee" asp-action="UpdateEmp">
+    <label>Id:</label>
+    <input type="number" name="id" value="@Model.Id" readonly>
+    <br />
+    <label>Name:</label>
+    <input type="text" name="name" value="@Model.Name">
+    <br />
+    <label>Price:</label>
+    <input type="number" name="salary" value="@Model.Salary">
+    <br />
+    <button type="submit">submit</button>
+</form>
